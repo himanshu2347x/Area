@@ -17,31 +17,40 @@
  <div class="mx-auto w-[1280px]">
     <div class="w-[1200px] mx-auto">
         <!-- Nav section  -->
-     <nav class="flex items-center justify-between h-[148px] pt-5 pb-[80px]">
+     <nav class="flex relative items-center justify-between h-[148px] pt-5 pb-[80px]">
         <div class=" text-black font-normal text-3xl">Area</div>
      
-     <ul class="flex items-center justify-evenly w-[399px] h-[60px] pt-5 pr-6 pb-5 pl-6 gap-[27px] rounded-[100px]">
-       <li class=" w-[54px] h-[20px] text-black font-dm font-bold text-[14px] leading-[140%] tracking-[-0.025em]">
-  Benefits
-</li>
-<li class="w-[93px] h-[20px] text-black font-dm font-bold text-[14px] leading-[140%] tracking-[-0.025em]">
-  Specifications
-</li>
-<li class="w-[50px] h-[20px] text-black font-dm font-bold text-[14px] leading-[140%] tracking-[-0.025em] text-nowrap">
-  How-to
-</li>
-<li class="w-[73px] h-[20px] text-black font-dm font-bold text-[14px] leading-[140%] tracking-[-0.025em] text-nowrap">
-  Contact Us
-</li>
+<ul class="flex fixed left-1/2 -translate-x-1/2 items-center justify-evenly w-[399px] h-[60px] pt-5 pr-6 pb-5 pl-6 gap-[27px] rounded-[100px] bg-white/40 backdrop-blur-[30px]">
+  <li class="w-[54px] h-[20px]">
+    <a href="#benefits" class="text-black font-dm font-bold text-[14px] leading-[140%] tracking-[-0.025em]">
+      Benefits
+    </a>
+  </li>
+  <li class="w-[93px] h-[20px]">
+    <a href="#specifications" class="text-black font-dm font-bold text-[14px] leading-[140%] tracking-[-0.025em]">
+      Specifications
+    </a>
+  </li>
+  <li class="w-[50px] h-[20px]">
+    <a href="#how-to" class="text-black font-dm font-bold text-[14px] leading-[140%] tracking-[-0.025em] whitespace-nowrap">
+      How-to
+    </a>
+  </li>
+  <li class="w-[73px] h-[20px]">
+    <a href="#contact" class="text-black font-dm font-bold text-[14px] leading-[140%] tracking-[-0.025em] whitespace-nowrap">
+      Contact Us
+    </a>
+  </li>
+</ul>
+
+<button class="group flex items-center bg-[#485C11] w-[127px] h-[48px] rounded-[1000px] py-[14px] px-[22px] gap-[2px] hover:bg-[#8E9C78]">
+  <span class="font-dm text-[14px] text-white font-bold leading-[140%] tracking-[-0.025em]">
+    Learn More
+  </span>
+  <img class="w-[6px] h-[6.01px] transform transition duration-400 group-hover:-translate-y-2" src="./assets/icon.png" alt="">
+</button>
 
 
-     </ul>
-
-     <button class=" flex items-center bg-[#485C11] w-[127px] h-[48px] rounded-[1000px] py-[14px] px-[22px] gap-[2px]">
-            <span class=" font-dm text-[14px] text-white font-bold leading-[140%] tracking-[-0.025em]
-             ">Learn More</span>
-        <img class="w-[6px] h-[6.01px]" src="./assets/icon.png" alt="">
-     </button>
          </nav>
 
          <!-- header section -->
@@ -172,8 +181,8 @@
 
         </ul>
         <!-- button -->
-       <button class="flex items-center justify-center w-[138px] h-[48px] rounded-full gap-[10px] bg-[#DFECC6] py-[14px] px-[22px]">
-  <span class="font-dm font-bold text-[14px] leading-[140%] tracking-[-0.025em] whitespace-nowrap">
+       <button class="flex items-center justify-center w-[138px] h-[48px] rounded-full gap-[10px] bg-[#DFECC6] py-[14px] px-[22px] group hover:bg-[#8E9C78] transform transition duration-300">
+  <span class="font-dm font-bold text-[14px] leading-[140%] tracking-[-0.025em] whitespace-nowrap group-hover:text-white">
     Discover more
   </span>
 </button>
@@ -193,8 +202,8 @@
          <h1 class="w-[720px] h-[54px] font-crimson font-normal text-[60px] leading-[90%] tracking-[-0.03em] text-black text-center">Why Choose Area?</h1>
          <p class="w-[720px] h-[42px] font-dm font-normal text-[15px] leading-[140%] tracking-[-0.005em] text-center text-[#6F6F6F]">You need a solution that keeps up. That’s why we developed Area. A developer-friendly approach to streamline your business.</p>
                           <!-- button -->
-       <button class="flex items-center justify-center w-[138px] h-[48px] rounded-full gap-[10px] bg-[#DFECC6] py-[14px] px-[22px]">
-  <span class="font-dm font-bold text-[14px] leading-[140%] tracking-[-0.025em] whitespace-nowrap">
+       <button class="flex items-center justify-center w-[138px] h-[48px] rounded-full gap-[10px] bg-[#DFECC6] py-[14px] px-[22px]  group hover:bg-[#8E9C78] transform transition duration-300">
+  <span class="font-dm font-bold text-[14px] leading-[140%] tracking-[-0.025em] group-hover:text-white whitespace-nowrap">
     Discover more
   </span>
 </button>   
@@ -385,8 +394,8 @@
   <div class="flex h-[54px] items-center justify-between">
     <h1 class="w-[397px] h-[54px] font-crimson font-normal rounded-[60px] leading-[90%] tracking-[-0.03em] text-[60px] text-[#000000]">Map Your Success</h1>
 
-    <button class="flex items-center justify-center w-[138px] h-[48px] rounded-full gap-[10px] bg-[#DFECC6] py-[14px] px-[22px]">
-      <span class="font-dm font-bold text-[14px] leading-[140%] tracking-[-0.025em] whitespace-nowrap">
+    <button class="flex items-center justify-center w-[138px] h-[48px] rounded-full gap-[10px] bg-[#DFECC6] py-[14px] px-[22px]  group hover:bg-[#8E9C78] transform transition duration-300">
+      <span class="font-dm font-bold text-[14px] leading-[140%] tracking-[-0.025em] group-hover:text-white whitespace-nowrap">
         Discover more
       </span>
     </button>
@@ -431,10 +440,10 @@
  <div class="flex flex-col h-[464px] max-w-[1500px] border-t-[0.5px] px-[300px] py-[120px] gap-[40px] border-[#E9E9E9] text-center">
   <h1 class=" font-crimson w-[600px] h-[54px] font-normal text-[60px] leading-[90%] tracking-[-0.03em]">Connect with us</h1>
   <p class="font-dm font-normal text-[15px] leading-[140%] tracking-[-0.005em] text-[#6F6F6F]">Schedule a quick call to learn how Area can turn your regional data into a powerful advantage.</p>
-       <button class=" flex items-center justify-center bg-[#485C11] w-[600px] h-[48px] rounded-[1000px] py-[14px] px-[22px] gap-[2px] ">
+       <button class=" flex items-center justify-center bg-[#485C11] w-[600px] h-[48px] rounded-[1000px] py-[14px] px-[22px] gap-[2px] group hover:bg-[#8E9C78] ">
             <span class=" font-dm text-[14px] text-white font-bold leading-[140%] tracking-[-0.025em]
              ">Learn More</span>
-        <img class="w-[6px] h-[6.01px]" src="./assets/icon.png" alt="">
+        <img class="w-[6px] h-[6.01px]  transform transition duration-400 group-hover:-translate-y-2" src="./assets/icon.png" alt="">
      </button>
  </div>
 
