@@ -68,7 +68,7 @@
   <div id="mobile-overlay" class="tab:hidden fixed inset-0 bg-black/40 opacity-0 pointer-events-none transition-opacity duration-300 z-30"></div>
 
   <!-- Mobile full-screen panel (below tab) -->
-  <aside id="mobile-panel" class="tab:hidden fixed inset-0 bg-white transform translate-x-full transition-transform duration-300 z-40 flex flex-col">
+  <aside id="mobile-panel" class="tab:hidden fixed top-0 left-0 w-full bg-white transform -translate-y-full transition-transform duration-300 z-40 flex flex-col shadow-lg">
     <div class="flex items-center justify-between px-6 py-6 h-[80px]">
       <div class="text-black font-normal text-2xl">Area</div>
       <button id="mobile-close-btn" aria-label="Close menu" class="inline-flex items-center justify-center p-2">
@@ -78,18 +78,18 @@
       </button>
     </div>
 
-    <nav class="flex-1 px-6 pt-8">
-      <a href="#benefits" class="block py-6 text-black font-dm font-bold text-[18px]">Benefits</a>
+    <nav class="flex-1 px-6 pt-4">
+      <a href="#benefits" class="block py-4 text-black font-dm font-bold text-[18px] hover:text-[#485C11] transition-colors">Benefits</a>
       <div class="border-t border-gray-200"></div>
-      <a href="#specifications" class="block py-6 text-black font-dm font-bold text-[18px]">Specifications</a>
+      <a href="#specifications" class="block py-4 text-black font-dm font-bold text-[18px] hover:text-[#485C11] transition-colors">Specifications</a>
       <div class="border-t border-gray-200"></div>
-      <a href="#how-to" class="block py-6 text-black font-dm font-bold text-[18px]">How-to</a>
+      <a href="#how-to" class="block py-4 text-black font-dm font-bold text-[18px] hover:text-[#485C11] transition-colors">How-to</a>
       <div class="border-t border-gray-200"></div>
-      <a href="#contact" class="block py-6 text-black font-dm font-bold text-[18px]">Contact Us</a>
+      <a href="#contact" class="block py-4 text-black font-dm font-bold text-[18px] hover:text-[#485C11] transition-colors">Contact Us</a>
       <div class="border-t border-gray-200"></div>
     </nav>
 
-    <div class="px-6 py-8">
+    <div class="px-6 py-6">
       <!-- Learn More button with FLEX for proper alignment -->
       <button class="flex items-center justify-center bg-[#485C11] w-full max-w-[200px] h-[48px] rounded-[1000px] py-[14px] px-[22px] gap-2 hover:bg-[#8E9C78] transition-colors">
         <span class="font-dm text-[14px] text-white font-bold leading-[140%] tracking-[-0.025em]">
@@ -558,25 +558,21 @@
     if (!openBtn || !panel || !overlay) return;
 
     function openPanel(){
-      panel.classList.remove('translate-x-full');
-      panel.classList.add('translate-x-0');
+      panel.classList.remove('-translate-y-full');
+      panel.classList.add('translate-y-0');
       overlay.classList.remove('opacity-0','pointer-events-none');
       overlay.classList.add('opacity-100');
       openBtn.setAttribute('aria-expanded','true');
-      if (iconOpen && iconClose){ iconOpen.classList.add('hidden'); iconClose.classList.remove('hidden'); }
-      // hide the top hamburger button so only the panel's close icon is visible
-      openBtn.classList.add('hidden');
+      openBtn.classList.add('hidden'); // Hide hamburger button when menu is open
     }
 
     function closePanel(){
-      panel.classList.add('translate-x-full');
-      panel.classList.remove('translate-x-0');
+      panel.classList.add('-translate-y-full');
+      panel.classList.remove('translate-y-0');
       overlay.classList.add('opacity-0','pointer-events-none');
       overlay.classList.remove('opacity-100');
       openBtn.setAttribute('aria-expanded','false');
-      if (iconOpen && iconClose){ iconOpen.classList.remove('hidden'); iconClose.classList.add('hidden'); }
-      // restore visibility of the top hamburger button
-      openBtn.classList.remove('hidden');
+      openBtn.classList.remove('hidden'); // Show hamburger button when menu is closed
     }
 
     openBtn.addEventListener('click', function(e){
