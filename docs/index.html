@@ -14,44 +14,92 @@
 <link href="https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
 </head>
 <body >
- <div class="mx-auto w-[1280px] px-[40px] pb-[20px]">
-    <div class="w-[1200px] mx-auto">
+ <div class="mx-auto max-w-[1280px] px-[40px] pb-[20px]">
+    <div class="w-full">
         <!-- Nav section  -->
-     <nav class="flex relative items-center justify-between h-[148px] pt-5 pb-[80px]">
-        <div class=" text-black font-normal text-3xl">Area</div>
-     
-<ul class="flex fixed left-1/2 -translate-x-1/2 items-center justify-evenly w-[399px] h-[60px] pt-5 pr-6 pb-5 pl-6 gap-[27px] rounded-[100px] bg-white/40 backdrop-blur-[30px]">
-  <li class="w-[54px] h-[20px]">
-    <a href="#benefits" class="text-black font-dm font-bold text-[14px] leading-[140%] tracking-[-0.025em]">
-      Benefits
-    </a>
-  </li>
-  <li class="w-[93px] h-[20px]">
-    <a href="#specifications" class="text-black font-dm font-bold text-[14px] leading-[140%] tracking-[-0.025em]">
-      Specifications
-    </a>
-  </li>
-  <li class="w-[50px] h-[20px]">
-    <a href="#how-to" class="text-black font-dm font-bold text-[14px] leading-[140%] tracking-[-0.025em] whitespace-nowrap">
-      How-to
-    </a>
-  </li>
-  <li class="w-[73px] h-[20px]">
-    <a href="#contact" class="text-black font-dm font-bold text-[14px] leading-[140%] tracking-[-0.025em] whitespace-nowrap">
-      Contact Us
-    </a>
-  </li>
-</ul>
+<nav class="flex relative items-center justify-between h-[80px] tab:h-[120px] desk:h-[148px] pt-5 pb-[20px] tab:pb-[40px] desk:pb-[80px]">
+  <div class="text-black font-normal text-2xl desk:text-3xl">Area</div>
 
-<button class="group flex items-center bg-[#485C11] w-[127px] h-[48px] rounded-[1000px] py-[14px] px-[22px] gap-[2px] hover:bg-[#8E9C78]">
-  <span class="font-dm text-[14px] text-white font-bold leading-[140%] tracking-[-0.025em]">
-    Learn More
-  </span>
-  <img class="w-[6px] h-[6.01px] transform transition duration-400 group-hover:-translate-y-2" src="./assets/icon.png" alt="">
-</button>
+  <!-- Hamburger: visible below tab -->
+  <button id="mobile-menu-btn" aria-expanded="false" aria-controls="mobile-panel" class="tab:hidden inline-flex items-center justify-center p-2 rounded-md text-black z-50">
+    <!-- Open icon -->
+    <svg id="icon-open" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+    </svg>
+    <!-- Close icon (hidden until open) -->
+    <svg id="icon-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+    </svg>
+  </button>
 
+  <!-- Centered nav: shown at tab (800px+) -->
+  <ul class="hidden tab:flex fixed left-1/2 -translate-x-1/2 items-center justify-evenly w-[399px] h-[60px] pt-5 pr-6 pb-5 pl-6 gap-[27px] rounded-[100px] bg-white/40 backdrop-blur-[30px]">
+    <li class="w-[54px] h-[20px]">
+      <a href="#benefits" class="text-black font-dm font-bold text-[14px] leading-[140%] tracking-[-0.025em]">
+        Benefits
+      </a>
+    </li>
+    <li class="w-[93px] h-[20px]">
+      <a href="#specifications" class="text-black font-dm font-bold text-[14px] leading-[140%] tracking-[-0.025em]">
+        Specifications
+      </a>
+    </li>
+    <li class="w-[50px] h-[20px]">
+      <a href="#how-to" class="text-black font-dm font-bold text-[14px] leading-[140%] tracking-[-0.025em] whitespace-nowrap">
+        How-to
+      </a>
+    </li>
+    <li class="w-[73px] h-[20px]">
+      <a href="#contact" class="text-black font-dm font-bold text-[14px] leading-[140%] tracking-[-0.025em] whitespace-nowrap">
+        Contact Us
+      </a>
+    </li>
+  </ul>
 
-         </nav>
+  <!-- Learn More button: show at tab (800px+) -->
+  <button class="hidden tab:flex group items-center bg-[#485C11] w-[127px] h-[48px] rounded-[1000px] py-[14px] px-[22px] gap-[2px] hover:bg-[#8E9C78] transition-colors">
+    <span class="font-dm text-[14px] text-white font-bold leading-[140%] tracking-[-0.025em]">
+      Learn More
+    </span>
+    <img class="w-[6px] h-[6.01px] transform transition duration-400 group-hover:-translate-y-2" src="./assets/icon.png" alt="">
+  </button>
+
+  <!-- Mobile overlay (below tab) -->
+  <div id="mobile-overlay" class="tab:hidden fixed inset-0 bg-black/40 opacity-0 pointer-events-none transition-opacity duration-300 z-30"></div>
+
+  <!-- Mobile full-screen panel (below tab) -->
+  <aside id="mobile-panel" class="tab:hidden fixed inset-0 bg-white transform translate-x-full transition-transform duration-300 z-40 flex flex-col">
+    <div class="flex items-center justify-between px-6 py-6 h-[80px]">
+      <div class="text-black font-normal text-2xl">Area</div>
+      <button id="mobile-close-btn" aria-label="Close menu" class="inline-flex items-center justify-center p-2">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </button>
+    </div>
+
+    <nav class="flex-1 px-6 pt-8">
+      <a href="#benefits" class="block py-6 text-black font-dm font-bold text-[18px]">Benefits</a>
+      <div class="border-t border-gray-200"></div>
+      <a href="#specifications" class="block py-6 text-black font-dm font-bold text-[18px]">Specifications</a>
+      <div class="border-t border-gray-200"></div>
+      <a href="#how-to" class="block py-6 text-black font-dm font-bold text-[18px]">How-to</a>
+      <div class="border-t border-gray-200"></div>
+      <a href="#contact" class="block py-6 text-black font-dm font-bold text-[18px]">Contact Us</a>
+      <div class="border-t border-gray-200"></div>
+    </nav>
+
+    <div class="px-6 py-8">
+      <!-- Learn More button with FLEX for proper alignment -->
+      <button class="flex items-center justify-center bg-[#485C11] w-full max-w-[200px] h-[48px] rounded-[1000px] py-[14px] px-[22px] gap-2 hover:bg-[#8E9C78] transition-colors">
+        <span class="font-dm text-[14px] text-white font-bold leading-[140%] tracking-[-0.025em]">
+          Learn More
+        </span>
+        <img class="w-[6px] h-[6.01px]" src="./assets/icon.png" alt="">
+      </button>
+    </div>
+  </aside>
+</nav>
 
          <!-- header section -->
 <header class="gap-[240px] h-[738px] flex flex-col items-center justify-center overflow-clip">
@@ -485,6 +533,56 @@
 </div>
  </div>
 
+<script>
+  // Mobile off-canvas panel + overlay toggle
+  (function(){
+    const openBtn = document.getElementById('mobile-menu-btn');
+    const closeBtn = document.getElementById('mobile-close-btn');
+    const panel = document.getElementById('mobile-panel');
+    const overlay = document.getElementById('mobile-overlay');
+    const iconOpen = document.getElementById('icon-open');
+    const iconClose = document.getElementById('icon-close');
+    if (!openBtn || !panel || !overlay) return;
+
+    function openPanel(){
+      panel.classList.remove('translate-x-full');
+      panel.classList.add('translate-x-0');
+      overlay.classList.remove('opacity-0','pointer-events-none');
+      overlay.classList.add('opacity-100');
+      openBtn.setAttribute('aria-expanded','true');
+      if (iconOpen && iconClose){ iconOpen.classList.add('hidden'); iconClose.classList.remove('hidden'); }
+      // hide the top hamburger button so only the panel's close icon is visible
+      openBtn.classList.add('hidden');
+    }
+
+    function closePanel(){
+      panel.classList.add('translate-x-full');
+      panel.classList.remove('translate-x-0');
+      overlay.classList.add('opacity-0','pointer-events-none');
+      overlay.classList.remove('opacity-100');
+      openBtn.setAttribute('aria-expanded','false');
+      if (iconOpen && iconClose){ iconOpen.classList.remove('hidden'); iconClose.classList.add('hidden'); }
+      // restore visibility of the top hamburger button
+      openBtn.classList.remove('hidden');
+    }
+
+    openBtn.addEventListener('click', function(e){
+      e.stopPropagation();
+      const expanded = openBtn.getAttribute('aria-expanded') === 'true';
+      if (expanded) closePanel(); else openPanel();
+    });
+
+    if (closeBtn) closeBtn.addEventListener('click', function(e){ e.stopPropagation(); closePanel(); });
+
+    overlay.addEventListener('click', function(){ closePanel(); });
+
+    // Close when a link inside the panel is clicked
+    panel.querySelectorAll('a').forEach(a => a.addEventListener('click', () => closePanel()));
+
+    // Ensure ESC closes the panel
+    document.addEventListener('keydown', function(e){ if (e.key === 'Escape') closePanel(); });
+  })();
+</script>
 
 </body>
 </html>
