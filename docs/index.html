@@ -102,25 +102,23 @@
 </nav>
 
          <!-- header section -->
-<header class="gap-[240px] h-[738px] flex flex-col items-center justify-center overflow-clip">
-  <h1 class="text-black font-crimson h-[136px] font-normal text-[160px] tracking-tighter leading-[85%]">
-    Browse everything.
+ <section class="flex items-center justify-center flex-col text-center gap-4 sm:gap-5 md:gap-6 mt-12 sm:mt-16 md:mt-20 px-4">
+  <h1 class="font-crimson font-normal text-center text-black tracking-tighter px-4
+    mob:text-[64px] mob:leading-[85%] mob:tracking-[-0.04em]
+    tab:text-[120px] tab:leading-[80%]
+    lap:text-[160px] lap:leading-[85%]">
+    Browse<br class="lap:hidden"> everything.
   </h1>
-  
-  <div class="relative flex items-center justify-center w-[1200px]">
-    <!-- Green background -->
-    <div class="w-full bg-[#8E9C78] rounded-[30px] h-[362px] relative z-0"></div>
-    
-    <!-- Laptop overlapping -->
-    <div class="bg-black absolute w-[907px] h-[644px] -top-[141px] left-[147px] rounded-3xl border-t-[2px] border-l-[2px] border-r-[2px] border-b-0 border-[rgba(255,255,255,0.5)] shadow-[0px_-4px_20px_0px_rgba(0,0,0,0.1)] z-10">
-      <img 
-        class="absolute w-[869.74px] h-[607.44px] top-[18.5px] left-[18.63px] rounded-2xl"
-        src="./assets/laptop.png"
-        alt=""
-      >
+    <div class="bg-g w-full max-w-[95%] sm:max-w-[95%] md:max-w-[98%] lg:max-w-full xl:max-w-full">
+      <picture>
+        <source media="(min-width: 1208px)" srcset="./assets/largeScreenLaptop.png">
+        <source media="(min-width: 800px)" srcset="./assets/mediumScreenLaptop.png">
+        <img src="./assets/smallScreenLaptop.png" alt="Laptop" class="w-full h-auto object-contain">
+      </picture>
     </div>
-  </div>
-</header>
+ </section>
+
+
 
 <!-- trusted by section  -->
 
