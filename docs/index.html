@@ -147,47 +147,49 @@
 <!-- benefit section  -->
  <div class="pb-[120px] flex flex-col ">
    <!-- Heading and icon -->
-   <div class="h-[672px] border-t-[0.5px] pt-[80px] pb-[60px] gap-[50px] border-t-[#E9E9E9]">
+   <div class="border-t-[0.5px] pt-[80px] pb-[60px] border-t-[#E9E9E9]">
   <!-- Heading -->
-   <div class="h-[192px] pr-[400px] gap-[50px] flex flex-col ">
-    <span class="h-[17px] font-normal text-[12px] leading-[140%] tracking-[-0.01em] dm-roboto text-[#485C11]">Benefits</span>
-    <h1 class="font-crimson w-[800px] h-[54px] font-normal text-[60px] leading-[90%] tracking-[-0.03em] text-black ">We’ve cracked the code.</h1>
-    <p class="w-[800px] h-[21px] font-dm font-normal leading-[140%] tracking-[-0.005em] text-[#6F6F6F]">Area provides real insights, without the data overload.</p>
-   </div>
-   <!-- icon -->
-    <div class="h-[290px] pt-[40px] gap-[20px] flex ">
-
-    <div class="flex flex-col w-[285px] h-[250px] border-t-[1px] pt-[40px] pr-[20px] pb-[40px] gap-[24px] border-[#E9E9E9]">
-      <img class="w-[24px] h-[24px]" src="./assets/icon1.png" alt="">
-      <div class="flex flex-col gap-[20px] w-[265px] h-[122px]">
-         <h1 class="w-[265px] h-[18px] font-crimson font-normal text-[18px] leading-[100%] tracking-[-0.03em] text-[#000000]">Amplify Insights</h1>
-         <p class="font-dm font-normal text-[15px] leading-[140%] w-[265px] h-[84px] tracking-[-0.005em] text-[#6F6F6F] ">Unlock data-driven decisions with comprehensive analytics, revealing key opportunities for strategic regional growth.</p>
-      </div>
-    </div>
-
-      <div class="flex flex-col w-[285px] h-[250px] border-t-[1px] pt-[40px] pr-[20px] pb-[40px] gap-[24px] border-[#E9E9E9]">
-         <img class="w-[24px] h-[24px]" src="./assets/icon2.png" alt="">
-          <div class="flex flex-col gap-[20px] w-[265px] h-[101px]">
-         <h1 class="w-[265px] h-[18px] font-crimson font-normal text-[18px] leading-[100%] tracking-[-0.03em] text-[#000000]">Control Your Global Presence</h1>
-         <p class="font-dm font-normal text-[15px] leading-[140%] w-[265px] h-[63px] tracking-[-0.005em] text-[#6F6F6F] ">Manage and track satellite offices, ensuring consistent performance and streamlined operations everywhere..</p>
-         </div>
-      </div>
-         
-         <div class="flex flex-col w-[285px] h-[250px] border-t-[1px] pt-[40px] pr-[20px] pb-[40px] gap-[24px] border-[#E9E9E9]">
-             <img class="w-[24px] h-[24px]" src="./assets/icon3.png" alt="">
-      <div class="flex flex-col gap-[20px] w-[245px] h-[122px]">
-         <h1 class="w-[245px] h-[18px] font-crimson font-normal text-[18px] leading-[100%] tracking-[-0.03em] text-[#000000]">Remove Language Barriers</h1>
-         <p class="font-dm font-normal text-[15px] leading-[140%] w-[245px] h-[84px] tracking-[-0.005em] text-[#6F6F6F] ">Adapt to diverse markets with built-in localization for clear communication and enhanced user experience.</p>
-      </div>
-               </div>
-          <div class="flex flex-col w-[285px] h-[250px] border-t-[1px] pt-[40px] pr-[20px] pb-[40px] gap-[24px] border-[#E9E9E9]">
-             <img class="w-[24px] h-[24px]" src="./assets/icon4.png" alt="">
-            <div class="flex flex-col gap-[20px] w-[245px] h-[122px]">
-         <h1 class="w-[245px] h-[18px] font-crimson font-normal text-[18px] leading-[100%] tracking-[-0.03em] text-[#000000]">Visualize Growth</h1>
-         <p class="font-dm font-normal text-[15px] leading-[140%] w-[245px] h-[84px] tracking-[-0.005em] text-[#6F6F6F] ">Generate precise, visually compelling reports that illustrate your growth trajectories across all regions.</p>
-      </div>       
-    </div>
+  <div class="mb-[50px] px-4 tab:px-0">
+    <span class="font-normal text-[12px] leading-[140%] tracking-[-0.01em] text-[#485C11]">Benefits</span>
+    <h1 class="font-crimson font-normal text-[48px] tab:text-[60px] leading-[90%] tracking-[-0.03em] text-black mt-[50px] max-w-[800px]">We've cracked the code.</h1>
+    <p class="font-dm font-normal text-[15px] leading-[140%] tracking-[-0.005em] text-[#6F6F6F] mt-[20px] max-w-[800px]">Area provides real insights, without the data overload.</p>
+  </div>
+   <!-- Benefits grid: single column on mobile, 2x2 on tab, 4 columns on lap -->
+    <div class="grid grid-cols-1 tab:grid-cols-2 lap:grid-cols-4 gap-[20px] px-4 tab:px-0 pt-[40px]">
+      
+      <div class="flex flex-col border-t-[1px] pt-[40px] pb-[40px] gap-[24px] border-[#E9E9E9]">
+        <img class="w-[24px] h-[24px]" src="./assets/icon1.png" alt="">
+        <div class="flex flex-col gap-[20px]">
+          <h1 class="font-crimson font-normal text-[18px] leading-[100%] tracking-[-0.03em] text-[#000000]">Amplify Insights</h1>
+          <p class="font-dm font-normal text-[15px] leading-[140%] tracking-[-0.005em] text-[#6F6F6F]">Unlock data-driven decisions with comprehensive analytics, revealing key opportunities for strategic regional growth.</p>
         </div>
+      </div>
+
+      <div class="flex flex-col border-t-[1px] pt-[40px] pb-[40px] gap-[24px] border-[#E9E9E9]">
+        <img class="w-[24px] h-[24px]" src="./assets/icon2.png" alt="">
+        <div class="flex flex-col gap-[20px]">
+          <h1 class="font-crimson font-normal text-[18px] leading-[100%] tracking-[-0.03em] text-[#000000]">Control Your Global Presence</h1>
+          <p class="font-dm font-normal text-[15px] leading-[140%] tracking-[-0.005em] text-[#6F6F6F]">Manage and track satellite offices, ensuring consistent performance and streamlined operations everywhere.</p>
+        </div>
+      </div>
+
+      <div class="flex flex-col border-t-[1px] pt-[40px] pb-[40px] gap-[24px] border-[#E9E9E9]">
+        <img class="w-[24px] h-[24px]" src="./assets/icon3.png" alt="">
+        <div class="flex flex-col gap-[20px]">
+          <h1 class="font-crimson font-normal text-[18px] leading-[100%] tracking-[-0.03em] text-[#000000]">Remove Language Barriers</h1>
+          <p class="font-dm font-normal text-[15px] leading-[140%] tracking-[-0.005em] text-[#6F6F6F]">Adapt to diverse markets with built-in localization for clear communication and enhanced user experience.</p>
+        </div>
+      </div>
+
+      <div class="flex flex-col border-t-[1px] pt-[40px] pb-[40px] gap-[24px] border-[#E9E9E9]">
+        <img class="w-[24px] h-[24px]" src="./assets/icon4.png" alt="">
+        <div class="flex flex-col gap-[20px]">
+          <h1 class="font-crimson font-normal text-[18px] leading-[100%] tracking-[-0.03em] text-[#000000]">Visualize Growth</h1>
+          <p class="font-dm font-normal text-[15px] leading-[140%] tracking-[-0.005em] text-[#6F6F6F]">Generate precise, visually compelling reports that illustrate your growth trajectories across all regions.</p>
+        </div>
+      </div>
+
+    </div>
    </div>
 
         <!-- mountains section -->
@@ -197,62 +199,61 @@
  </div>
 
  <!-- see the big picture -->
-  <div class="h-[831px] pb-[120px] gap-[20px] flex ">
-   <!-- left section  -->
-    <div class="w-[590px] h-[711px] border-t-[1px] pt-[60px] pb-[80px] gap-[40px] border-[#E9E9E9] flex flex-col">
+  <div class="pb-[120px] gap-[20px] flex flex-col lap:flex-row lap:h-[831px]">
+    <!-- Image section: shows first on mobile/tablet, second on lap -->
+    <img class="w-full lap:w-[590px] h-[400px] lap:h-[711px] order-1 lap:order-2 rounded-[20px] lap:rounded-none object-cover px-4 lap:px-0" src="./assets/cylinder.png" alt="">
+    
+    <!-- Content section -->
+    <div class="w-full lap:w-[590px] lap:h-[711px] border-t-[1px] pt-[60px] pb-[40px] lap:pb-[80px] gap-[40px] border-[#E9E9E9] flex flex-col order-2 lap:order-1 px-4 lap:px-0">
       <!-- title -->
-     <div class="w-[590px] h-[136px] pr-[80px] gap-[40px] flex flex-col">
-        <h1 class="w-[510px] h-[54px] font-crimson font-normal text-[60px] leading-[90%] tracking-[-0.03em] text-[#000000]">See the Big Picture</h1>
-       <p class="w-[510px] h-[42px] font-dm font-normal text-[15px] leading-[140%] tracking-[-0.005em] text-[#6F6F6F]">Area turns your data into clear, vibrant visuals that show you exactly what's happening in each region.</p>
-     </div>
-       <!-- list -->
-        <ul class="w-[590px] h-[307px] flex flex-col  ">
-<ul class="w-[590px] h-[307px]">
-  <li class="flex w-[590px] h-[61px] border-t-[1px] py-[20px] pr-[80px] gap-[30px] border-[#E9E9E9] items-center">
-    <h1 class="w-[16px] h-[21px] font-dm font-normal text-[15px] leading-[140%] tracking-[-0.005em] text-[#6F6F6F]">01</h1>
-    <p class="w-[464px] h-[21px] font-dm font-normal text-[15px] leading-[140%] tracking-[-0.005em] text-[#000000]">Spot Trends in Seconds: No more digging through numbers.</p>
-  </li>
+      <div class="gap-[20px] lap:gap-[40px] flex flex-col lap:pr-[80px]">
+        <h1 class="font-crimson font-normal text-[48px] lap:text-[60px] leading-[90%] tracking-[-0.03em] text-[#000000] max-w-[510px]">See the Big Picture</h1>
+        <p class="font-dm font-normal text-[15px] leading-[140%] tracking-[-0.005em] text-[#6F6F6F] max-w-[510px]">Area turns your data into clear, vibrant visuals that show you exactly what's happening in each region.</p>
+      </div>
+      
+      <!-- list -->
+      <ul class="flex flex-col gap-[10px]">
+        <li class="flex border-t-[1px] py-[20px] lap:pr-[80px] gap-[20px] lap:gap-[30px] border-[#E9E9E9] items-center">
+          <h1 class="min-w-[16px] font-dm font-normal text-[15px] leading-[140%] tracking-[-0.005em] text-[#6F6F6F]">01</h1>
+          <p class="font-dm font-normal text-[15px] leading-[140%] tracking-[-0.005em] text-[#000000] flex-1">Spot Trends in Seconds: No more digging through numbers.</p>
+        </li>
 
-  <li class="flex w-[590px] h-[82px] border-t-[1px] py-[20px] pr-[80px] gap-[30px] border-[#E9E9E9] items-center">
-    <h1 class="w-[20px] h-[21px] font-dm font-normal text-[15px] leading-[140%] tracking-[-0.005em] text-[#6F6F6F]">02</h1>
-    <p class="w-[460px] h-[42px] font-dm font-normal text-[15px] leading-[140%] tracking-[-0.005em] text-[#000000]">Get Everyone on the Same Page: Share easy-to-understand reports with your team.</p>
-  </li>
+        <li class="flex border-t-[1px] py-[20px] lap:pr-[80px] gap-[20px] lap:gap-[30px] border-[#E9E9E9] items-center">
+          <h1 class="min-w-[20px] font-dm font-normal text-[15px] leading-[140%] tracking-[-0.005em] text-[#6F6F6F]">02</h1>
+          <p class="font-dm font-normal text-[15px] leading-[140%] tracking-[-0.005em] text-[#000000] flex-1">Get Everyone on the Same Page: Share easy-to-understand reports with your team.</p>
+        </li>
 
-  <li class="flex w-[590px] h-[82px] border-t-[1px] py-[20px] pr-[80px] gap-[30px] border-[#E9E9E9] items-center">
-    <h1 class="w-[20px] h-[21px] font-dm font-normal text-[15px] leading-[140%] tracking-[-0.005em] text-[#6F6F6F]">03</h1>
-    <p class="w-[460px] h-[42px] font-dm font-normal text-[15px] leading-[140%] tracking-[-0.005em] text-[#000000]">Make Presentations Pop: Interactive maps and dashboards keep your audience engaged.</p>
-  </li>
+        <li class="flex border-t-[1px] py-[20px] lap:pr-[80px] gap-[20px] lap:gap-[30px] border-[#E9E9E9] items-center">
+          <h1 class="min-w-[20px] font-dm font-normal text-[15px] leading-[140%] tracking-[-0.005em] text-[#6F6F6F]">03</h1>
+          <p class="font-dm font-normal text-[15px] leading-[140%] tracking-[-0.005em] text-[#000000] flex-1">Make Presentations Pop: Interactive maps and dashboards keep your audience engaged.</p>
+        </li>
 
-  <li class="flex w-[590px] h-[82px] border-t-[1px] py-[20px] pr-[80px] gap-[30px] border-[#E9E9E9] items-center">
-    <h1 class="w-[21px] h-[21px] font-dm font-normal text-[15px] leading-[140%] tracking-[-0.005em] text-[#6F6F6F]">04</h1>
-    <p class="w-[459px] h-[42px] font-dm font-normal text-[15px] leading-[140%] tracking-[-0.005em] text-[#000000]">Your Global Snapshot: Get a quick, clear overview of your entire operation.</p>
-  </li>
-</ul>
-
-        </ul>
-        <!-- button -->
-       <button class="flex items-center justify-center w-[138px] h-[48px] rounded-full gap-[10px] bg-[#DFECC6] py-[14px] px-[22px] group hover:bg-[#8E9C78] transform transition duration-300">
-  <span class="font-dm font-bold text-[14px] leading-[140%] tracking-[-0.025em] whitespace-nowrap group-hover:text-white">
-    Discover more
-  </span>
-</button>
-
+        <li class="flex border-t-[1px] py-[20px] lap:pr-[80px] gap-[20px] lap:gap-[30px] border-[#E9E9E9] items-center">
+          <h1 class="min-w-[21px] font-dm font-normal text-[15px] leading-[140%] tracking-[-0.005em] text-[#6F6F6F]">04</h1>
+          <p class="font-dm font-normal text-[15px] leading-[140%] tracking-[-0.005em] text-[#000000] flex-1">Your Global Snapshot: Get a quick, clear overview of your entire operation.</p>
+        </li>
+      </ul>
+      
+      <!-- button -->
+      <button class="flex items-center justify-center w-[138px] h-[48px] rounded-full gap-[10px] bg-[#DFECC6] py-[14px] px-[22px] group hover:bg-[#8E9C78] transform transition duration-300 mt-[20px]">
+        <span class="font-dm font-bold text-[14px] leading-[140%] tracking-[-0.025em] whitespace-nowrap group-hover:text-white">
+          Discover more
+        </span>
+      </button>
     </div>
-    <!-- right section  -->
-     <img class="w-[590px] h-[711px] gap[20px]" src="./assets/cylinder.png" alt="">
   </div>
 
-  <!-- why choose area -->
-   <div class="flex flex-col pb-[120px] gap-[20px]">
+    <!-- why choose area -->
+   <div class="flex flex-col pb-[60px] tab:pb-[80px] lap:pb-[120px] gap-[20px]">
       <!-- content -->
-       <div class="flex items-center justify-center h-[441px] border-t-[1px] py-[80px] px-[240px] gap-[40px] border-[#929292] ">
+       <div class="flex items-center justify-center min-h-[300px] tab:min-h-[400px] lap:h-[441px] border-t-[1px] py-[40px] tab:py-[60px] lap:py-[80px] px-[20px] tab:px-[60px] lap:px-[240px] gap-[20px] tab:gap-[40px] border-[#929292]">
 
-         <div class="items-center justify-center w-[720px] h-[281px] gap-[40px] flex flex-col">
+         <div class="items-center justify-center w-full max-w-[720px] gap-[20px] tab:gap-[30px] lap:gap-[40px] flex flex-col">
      <h3>Specs</h3>
-         <h1 class="w-[720px] h-[54px] font-crimson font-normal text-[60px] leading-[90%] tracking-[-0.03em] text-black text-center">Why Choose Area?</h1>
-         <p class="w-[720px] h-[42px] font-dm font-normal text-[15px] leading-[140%] tracking-[-0.005em] text-center text-[#6F6F6F]">You need a solution that keeps up. That’s why we developed Area. A developer-friendly approach to streamline your business.</p>
+         <h1 class="w-full max-w-[720px] font-crimson font-normal text-[32px] tab:text-[48px] lap:text-[60px] leading-[90%] tracking-[-0.03em] text-black text-center">Why Choose Area?</h1>
+         <p class="w-full max-w-[720px] font-dm font-normal text-[14px] tab:text-[15px] leading-[140%] tracking-[-0.005em] text-center text-[#6F6F6F] px-[10px]">You need a solution that keeps up. That's why we developed Area. A developer-friendly approach to streamline your business.</p>
                           <!-- button -->
-       <button class="flex items-center justify-center w-[138px] h-[48px] rounded-full gap-[10px] bg-[#DFECC6] py-[14px] px-[22px]  group hover:bg-[#8E9C78] transform transition duration-300">
+       <button class="flex items-center justify-center w-[138px] h-[48px] rounded-full gap-[10px] bg-[#DFECC6] py-[14px] px-[22px] group hover:bg-[#8E9C78] transform transition duration-300 mt-[10px] tab:mt-0">
   <span class="font-dm font-bold text-[14px] leading-[140%] tracking-[-0.025em] group-hover:text-white whitespace-nowrap">
     Discover more
   </span>
@@ -261,51 +262,55 @@
        </div>
 
        <!-- table -->
-        <div class=" flex items-center justify-center h-[582px] rounded-[20px]">
+        <div class="flex items-center justify-center min-h-[582px] rounded-[20px]">
+          <!-- Mobile: horizontal scroll, Tab and Lap: centered side by side -->
+          <div class="w-full tab:flex tab:items-center tab:justify-center tab:px-[20px] lap:px-0">
+            <div class="overflow-x-auto tab:overflow-x-visible px-[20px] tab:px-0 pb-[20px] tab:pb-0 horizontal-scroll">
+              <div class="flex gap-[20px] tab:gap-[10px] lap:gap-0 tab:justify-center w-max tab:w-auto">
           <!-- card 1 -->
-<ul class="flex flex-col w-[400px] h-[582px] rounded-[20px] border border-[#E9E9E9] shadow-[0_2px_8px_0_rgba(0,0,0,0.08)]">
-  <li class="h-[96px] w-[400px] border-b border-[#929292] py-[40px] px-[30px] text-center">
-    <span class="w-[51px] h-[31px] font-dm font-medium text-[25.71px] leading-[120%] tracking-[-0.08em]  text-black">
+<ul class="flex flex-col w-[300px] tab:w-[240px] lap:w-[400px] h-[582px] rounded-[20px] border border-[#E9E9E9] shadow-[0_2px_8px_0_rgba(0,0,0,0.08)] flex-shrink-0">
+  <li class="h-[96px] w-full border-b border-[#929292] py-[40px] px-[20px] tab:px-[30px] text-center">
+    <span class="font-dm font-medium text-[22px] tab:text-[25.71px] leading-[120%] tracking-[-0.08em] text-black">
       Area
     </span>
   </li>
 
-  <li class="flex items-center w-[400px] h-[81px] border-b border-[#E9E9E9] py-[32px] px-[30px] gap-[8px]">
+  <li class="flex items-center w-full h-[81px] border-b border-[#E9E9E9] py-[32px] px-[20px] tab:px-[30px] gap-[8px]">
     <img class="w-[14px] h-[14px]" src="./assets/tick.png" alt="">
     <p class="font-roboto font-normal text-[12px] leading-[140%] text-black tracking-[-0.01em]">
       Ultra-fast browsing
     </p>
   </li>
 
-  <li class="flex items-center w-[400px] h-[81px] border-b border-[#E9E9E9] py-[32px] px-[30px] gap-[8px]">
+  <li class="flex items-center w-full h-[81px] border-b border-[#E9E9E9] py-[32px] px-[20px] tab:px-[30px] gap-[8px]">
     <img class="w-[14px] h-[14px]" src="./assets/tick.png" alt="">
     <p class="font-roboto font-normal text-[12px] leading-[140%] text-black tracking-[-0.01em]">
       Advanced AI insights
     </p>
   </li>
 
-  <li class="flex items-center w-[400px] h-[81px] border-b border-[#E9E9E9] py-[32px] px-[30px] gap-[8px]">
+  <li class="flex items-center w-full h-[81px] border-b border-[#E9E9E9] py-[32px] px-[20px] tab:px-[30px] gap-[8px]">
     <img class="w-[14px] h-[14px]" src="./assets/tick.png" alt="">
     <p class="font-roboto font-normal text-[12px] leading-[140%] text-black tracking-[-0.01em]">
       Seamless integration
     </p>
   </li>
 
-  <li class="flex items-center w-[400px] h-[81px] border-b border-[#E9E9E9] py-[32px] px-[30px] gap-[8px]">
+  <li class="flex items-center w-full h-[81px] border-b border-[#E9E9E9] py-[32px] px-[20px] tab:px-[30px] gap-[8px]">
     <img class="w-[14px] h-[14px]" src="./assets/tick.png" alt="">
     <p class="font-roboto font-normal text-[12px] leading-[140%] text-black tracking-[-0.01em]">
       Advanced AI insights
     </p>
   </li>
 
-    <li class="flex items-center w-[400px] h-[81px] py-[32px] px-[30px] gap-[8px]">
+    <li class="flex items-center w-full h-[81px] py-[32px] px-[20px] tab:px-[30px] gap-[8px]">
     <img class="w-[14px] h-[14px]" src="./assets/tick.png" alt="">
     <p class="font-roboto font-normal text-[12px] leading-[140%] text-black tracking-[-0.01em]">
       Ultra-fast browsing
     </p>
   </li>
 
-  <li class="flex items-center w-[400px] h-[81px] py-[32px] px-[30px] gap-[8px]">
+  <li class="flex items-center w-full h-[81px] py-[32px] px-[20px] tab:px-[30px] gap-[8px]">
     <img class="w-[14px] h-[14px]" src="./assets/tick.png" alt="">
     <p class="font-roboto font-normal text-[12px] leading-[140%] text-black tracking-[-0.01em]">
       Full UTF-8 support
@@ -314,167 +319,174 @@
 </ul>
 
            <!-- card 2 -->
-<ul class="flex flex-col w-[400px] h-[582px] min-w-[200px]">
-  <li class="h-[96px] w-[400px] border-b-[1px] border-[#929292] py-[40px] px-[30px] gap-[16px] text-center">
-    <span class="w-[94px] h-[27px] font-rethink font-medium text-[22.86px] leading-[120%] tracking-[-0.08em]  text-[#6F6F6F]">
+<ul class="flex flex-col w-[300px] tab:w-[240px] lap:w-[400px] h-[582px] flex-shrink-0">
+  <li class="h-[96px] w-full border-b-[1px] border-[#929292] py-[40px] px-[20px] tab:px-[30px] gap-[16px] text-center">
+    <span class="font-rethink font-medium text-[20px] tab:text-[22.86px] leading-[120%] tracking-[-0.08em] text-[#6F6F6F]">
       WebSurge
     </span>
   </li>
 
-  <li class="flex items-center w-[400px] h-[81px] border-b-[0.5px] border-[#E9E9E9] py-[32px] px-[30px] gap-[8px]">
+  <li class="flex items-center w-full h-[81px] border-b-[0.5px] border-[#E9E9E9] py-[32px] px-[20px] tab:px-[30px] gap-[8px]">
     <img class="w-[14px] h-[14px]" src="./assets/tick.png" alt="">
-    <p class="w-[135px] h-[17px] font-roboto font-normal text-[12px] leading-[140%] text-black tracking-[-0.01em] text-nowrap">
+    <p class="font-roboto font-normal text-[12px] leading-[140%] text-black tracking-[-0.01em]">
       Fast browsing
     </p>
   </li>
 
-  <li class="flex items-center w-[400px] h-[81px] border-b-[0.5px] border-[#E9E9E9] py-[32px] px-[30px] gap-[8px]">
+  <li class="flex items-center w-full h-[81px] border-b-[0.5px] border-[#E9E9E9] py-[32px] px-[20px] tab:px-[30px] gap-[8px]">
     <img class="w-[14px] h-[14px]" src="./assets/tick.png" alt="">
-    <p class="w-[135px] h-[17px] font-roboto font-normal text-[12px] leading-[140%] text-black tracking-[-0.01em] text-nowrap">
+    <p class="font-roboto font-normal text-[12px] leading-[140%] text-black tracking-[-0.01em]">
       Basic AI recommendations
     </p>
   </li>
 
-  <li class="flex items-center w-[400px] h-[81px] border-b-[0.5px] border-[#E9E9E9] py-[32px] px-[30px] gap-[8px]">
+  <li class="flex items-center w-full h-[81px] border-b-[0.5px] border-[#E9E9E9] py-[32px] px-[20px] tab:px-[30px] gap-[8px]">
     <img class="w-[14px] h-[14px]" src="./assets/tick.png" alt="">
-    <p class="w-[135px] h-[17px] font-roboto font-normal text-[12px] leading-[140%] text-black tracking-[-0.01em] text-nowrap">
+    <p class="font-roboto font-normal text-[12px] leading-[140%] text-black tracking-[-0.01em]">
       Restricts customization
     </p>
   </li>
 
-  <li class="flex items-center w-[400px] h-[81px] border-b-[0.5px] border-[#E9E9E9] py-[32px] px-[30px] gap-[8px]">
+  <li class="flex items-center w-full h-[81px] border-b-[0.5px] border-[#E9E9E9] py-[32px] px-[20px] tab:px-[30px] gap-[8px]">
     <img class="w-[14px] h-[14px]" src="./assets/tick.png" alt="">
-    <p class="w-[135px] h-[17px] font-roboto font-normal text-[12px] leading-[140%] text-black tracking-[-0.01em] text-nowrap">
+    <p class="font-roboto font-normal text-[12px] leading-[140%] text-black tracking-[-0.01em]">
       Basic AI insights
     </p>
   </li>
 
-  <li class="flex items-center w-[400px] h-[81px] border-b-[0.5px] border-[#E9E9E9] py-[32px] px-[30px] gap-[8px]">
+  <li class="flex items-center w-full h-[81px] border-b-[0.5px] border-[#E9E9E9] py-[32px] px-[20px] tab:px-[30px] gap-[8px]">
     <img class="w-[14px] h-[14px]" src="./assets/tick.png" alt="">
-    <p class="w-[135px] h-[17px] font-roboto font-normal text-[12px] leading-[140%] text-black tracking-[-0.01em] text-nowrap">
+    <p class="font-roboto font-normal text-[12px] leading-[140%] text-black tracking-[-0.01em]">
       Fast browsing
     </p>
   </li>
 
-  <li class="flex items-center w-[400px] h-[81px] py-[32px] px-[30px] gap-[8px]">
+  <li class="flex items-center w-full h-[81px] py-[32px] px-[20px] tab:px-[30px] gap-[8px]">
     <img class="w-[14px] h-[14px]" src="./assets/wrong.png" alt="">
-    <p class="w-[135px] h-[17px] font-roboto font-normal text-[12px] leading-[140%] text-black tracking-[-0.01em] text-nowrap">
+    <p class="font-roboto font-normal text-[12px] leading-[140%] text-black tracking-[-0.01em]">
       Potential display errors
     </p>
   </li>
 </ul>
 
             <!-- card 3 -->
-<ul class="flex flex-col w-[400px] h-[582px] min-w-[200px]">
-  <li class="h-[96px] w-[400px] border-b border-[#929292] py-[40px] px-[30px] gap-[16px] text-center">
-    <span class="w-[96px] h-[26px] font-rethink font-medium text-[21.65px] leading-[120%] tracking-[-0.08em] text-[#6F6F6F]">
+<ul class="flex flex-col w-[300px] tab:w-[240px] lap:w-[400px] h-[582px] flex-shrink-0">
+  <li class="h-[96px] w-full border-b border-[#929292] py-[40px] px-[20px] tab:px-[30px] gap-[16px] text-center">
+    <span class="font-rethink font-medium text-[19px] tab:text-[21.65px] leading-[120%] tracking-[-0.08em] text-[#6F6F6F]">
       HyperView
     </span>
   </li>
 
-  <li class="flex items-center w-[400px] h-[81px] border-b border-[#E9E9E9] py-[32px] px-[30px] gap-[8px]">
+  <li class="flex items-center w-full h-[81px] border-b border-[#E9E9E9] py-[32px] px-[20px] tab:px-[30px] gap-[8px]">
     <img class="w-[14px] h-[14px]" src="./assets/wrong.png" alt="">
-    <p class="w-[135px] h-[17px] font-roboto font-normal text-[12px] leading-[140%] text-black tracking-[-0.01em] text-nowrap">
+    <p class="font-roboto font-normal text-[12px] leading-[140%] text-black tracking-[-0.01em]">
       Moderate speeds
     </p>
   </li>
 
-  <li class="flex items-center w-[400px] h-[81px] border-b border-[#E9E9E9] py-[32px] px-[30px] gap-[8px]">
+  <li class="flex items-center w-full h-[81px] border-b border-[#E9E9E9] py-[32px] px-[20px] tab:px-[30px] gap-[8px]">
     <img class="w-[14px] h-[14px]" src="./assets/wrong.png" alt="">
-    <p class="w-[114px] h-[17px] font-roboto font-normal text-[12px] leading-[140%] text-black tracking-[-0.01em] text-nowrap">
+    <p class="font-roboto font-normal text-[12px] leading-[140%] text-black tracking-[-0.01em]">
       No AI assistance
     </p>
   </li>
 
-  <li class="flex items-center w-[400px] h-[81px] border-b border-[#E9E9E9] py-[32px] px-[30px] gap-[8px]">
+  <li class="flex items-center w-full h-[81px] border-b border-[#E9E9E9] py-[32px] px-[20px] tab:px-[30px] gap-[8px]">
     <img class="w-[14px] h-[14px]" src="./assets/wrong.png" alt="">
-    <p class="w-[142px] h-[17px] font-roboto font-normal text-[12px] leading-[140%] text-black tracking-[-0.01em] text-nowrap">
+    <p class="font-roboto font-normal text-[12px] leading-[140%] text-black tracking-[-0.01em]">
       Steep learning curve
     </p>
   </li>
 
-  <li class="flex items-center w-[400px] h-[81px] border-b border-[#E9E9E9] py-[32px] px-[30px] gap-[8px]">
+  <li class="flex items-center w-full h-[81px] border-b border-[#E9E9E9] py-[32px] px-[20px] tab:px-[30px] gap-[8px]">
     <img class="w-[14px] h-[14px]" src="./assets/wrong.png" alt="">
-    <p class="w-[114px] h-[17px] font-roboto font-normal text-[12px] leading-[140%] text-black tracking-[-0.01em] text-nowrap">
+    <p class="font-roboto font-normal text-[12px] leading-[140%] text-black tracking-[-0.01em]">
       No AI assistance
     </p>
   </li>
 
-  <li class="flex items-center w-[400px] h-[81px] border-b border-[#E9E9E9] py-[32px] px-[30px] gap-[8px]">
+  <li class="flex items-center w-full h-[81px] border-b border-[#E9E9E9] py-[32px] px-[20px] tab:px-[30px] gap-[8px]">
     <img class="w-[14px] h-[14px]" src="./assets/wrong.png" alt="">
-    <p class="w-[107px] h-[17px] font-roboto font-normal text-[12px] leading-[140%] text-black tracking-[-0.01em] text-nowrap">
+    <p class="font-roboto font-normal text-[12px] leading-[140%] text-black tracking-[-0.01em]">
       Moderate speeds
     </p>
   </li>
 
-  <li class="flex items-center w-[400px] h-[81px] py-[32px] px-[30px] gap-[8px]">
+  <li class="flex items-center w-full h-[81px] py-[32px] px-[20px] tab:px-[30px] gap-[8px]">
     <img class="w-[14px] h-[14px]" src="./assets/wrong.png" alt="">
-    <p class="w-[149px] h-[17px] font-roboto font-normal text-[12px] leading-[140%] text-black tracking-[-0.01em] text-nowrap">
+    <p class="font-roboto font-normal text-[12px] leading-[140%] text-black tracking-[-0.01em]">
       Partial UTF-8 support
     </p>
   </li>
 </ul>
 
 
+              </div>
+            </div>
+          </div>
                    <!-- End of table -->
         </div>
    </div>
 
    <!-- testimonial section -->
-    <div class="flex items-center h-[789.38px] justify-center gap-[20px] pb-[120px]">
-    <!-- left part  -->
-     <img class="w-[590px] h-[669.38px] rounded-[30px] p-[10px] gap-[10px]" src="./assets/circle.png" alt="">
-     <!-- right part  -->
-      <div class="flex flex-col items-center justify-center w-[590px] h-[669.38px] border-t-[1px] pl-[50px] gap-[50px] border-[#E9E9E9]">
-        <p class="w-[590px] h-[294px] font-crimson text-[40px] leading-[105%] tracking-[-0.04em] text-black">
-         “I was skeptical, but Area has completely transformed the way I manage my business. The data visualizations are so clear and intuitive, and the platform is so easy to use. I can't imagine running my company without it.”
+    <div class="flex flex-col lap:flex-row items-center justify-center min-h-[600px] lap:h-[789.38px] gap-[40px] lap:gap-[20px] pb-[80px] lap:pb-[120px] px-[20px] lap:px-0">
+    <!-- left part (image) -->
+     <img class="w-full max-w-[400px] tab:max-w-[500px] lap:w-[590px] h-auto lap:h-[669.38px] rounded-[30px] p-[10px] gap-[10px] object-cover" src="./assets/circle.png" alt="">
+     <!-- right part (content) -->
+      <div class="flex flex-col items-center justify-center w-full max-w-[500px] lap:w-[590px] min-h-[400px] lap:h-[669.38px] border-t-[1px] pt-[40px] lap:pt-0 px-[20px] lap:pl-[50px] gap-[30px] lap:gap-[50px] border-[#E9E9E9]">
+        <p class="w-full font-crimson text-[24px] tab:text-[32px] lap:text-[40px] leading-[105%] tracking-[-0.04em] text-black text-center lap:text-left">
+         "I was skeptical, but Area has completely transformed the way I manage my business. The data visualizations are so clear and intuitive, and the platform is so easy to use. I can't imagine running my company without it."
         </p>
-        <div class="flex flex-col w-[540px] h-[46px] gap-[8px]">
+        <div class="flex flex-col w-full gap-[8px] text-center lap:text-left">
           <h1 class="font-dm font-normal text-[15px] leading-[140%] tracking-[-0.005em] text-black">John Smith</h1>
           <h3 class="font-roboto font-normal text-[15px] leading-[140%] tracking-[-0.01em] text-[#485C11]">Head of Data</h3>
         </div>
       </div>
-          </div>
+    </div>
 
    <!-- end of testimonial section  -->
 
    <!-- how it works section  -->
-<div class="flex flex-col h-[634px] border-t-[1px] pt-[80px] pb-[120px] gap-[80px] border-[#E9E9E9]">
+<div class="flex flex-col min-h-[500px] tab:min-h-[600px] lap:h-[634px] border-t-[1px] pt-[40px] tab:pt-[60px] lap:pt-[80px] pb-[60px] tab:pb-[80px] lap:pb-[120px] gap-[40px] tab:gap-[60px] lap:gap-[80px] border-[#E9E9E9] px-[20px] tab:px-[40px] lap:px-0">
   <!-- button section  -->
-  <div class="flex h-[54px] items-center justify-between">
-    <h1 class="w-[397px] h-[54px] font-crimson font-normal rounded-[60px] leading-[90%] tracking-[-0.03em] text-[60px] text-[#000000]">Map Your Success</h1>
+  <div class="flex flex-col tab:flex-row items-center tab:items-center gap-[20px] tab:gap-0 tab:justify-between">
+    <h1 class="font-crimson font-normal leading-[90%] tracking-[-0.03em] text-[28px] tab:text-[48px] lap:text-[60px] text-[#000000] text-center tab:text-left">Map Your Success</h1>
 
-    <button class="flex items-center justify-center w-[138px] h-[48px] rounded-full gap-[10px] bg-[#DFECC6] py-[14px] px-[22px]  group hover:bg-[#8E9C78] transform transition duration-300">
+    <button class="flex items-center justify-center w-[138px] h-[48px] rounded-full gap-[10px] bg-[#DFECC6] py-[14px] px-[22px] group hover:bg-[#8E9C78] transform transition duration-300 flex-shrink-0">
       <span class="font-dm font-bold text-[14px] leading-[140%] tracking-[-0.025em] group-hover:text-white whitespace-nowrap">
-        Discover more
+        Discover More
       </span>
     </button>
   </div>
 
   <!-- 3 up section  -->
-  <div class="flex gap-[20px] h-[300px] items-center">
-    <!-- card 1 -->
-    <div class="flex flex-col w-[386.67px] h-[300px] border-t-[1px] pt-[60px] pr-[30px] pb-[20px] gap-[60px] border-[#E9E9E9]">
-      <h1 class="font-dm font-normal text-[80px] leading-[100%] tracking-[-0.04em] text-[#929292]">01</h1>
-      <div class="flex flex-col w-[356.67px] h-[80px] gap-[20px]">
-        <h5 class="h-[18px] font-crimson font-normal text-[18px] leading-[100%] tracking-[-0.03em] text-black">Get Started</h5>
-        <p class="font-dm font-normal text-[15px] leading-[140%] tracking-[-0.005em] text-[#6F6F6F]">With our intuitive setup, you’re up and running in minutes.</p>
-      </div>
-    </div>
-    <!-- card 2 -->
-         <div class="flex flex-col w-[386.67px] h-[300px] border-t-[1px] pt-[60px] pr-[30px] pb-[20px] gap-[60px] border-[#E9E9E9]">
-      <h1 class="font-dm font-normal text-[80px] leading-[100%] tracking-[-0.04em] text-[#929292]">02</h1>
-      <div class="flex flex-col w-[356.67px] h-[80px] gap-[20px]">
-        <h5 class="h-[18px] font-crimson font-normal text-[18px] leading-[100%] tracking-[-0.03em] text-black">Customize and Configure</h5>
-        <p class="font-dm font-normal text-[15px] leading-[140%] tracking-[-0.005em] text-[#6F6F6F]">Adapt Area to your specific requirements and preferences.</p>
-      </div>
-    </div>
-    <!-- card 3 -->
-              <div class="flex flex-col w-[386.67px] h-[300px] border-t-[1px] pt-[60px] pr-[30px] pb-[20px] gap-[60px] border-[#E9E9E9]">
-      <h1 class="font-dm font-normal text-[80px] leading-[100%] tracking-[-0.04em] text-[#929292]">03</h1>
-      <div class="flex flex-col w-[356.67px] h-[80px] gap-[20px]">
-        <h5 class="h-[18px] font-crimson font-normal text-[18px] leading-[100%] tracking-[-0.03em] text-black">Grow Your Business</h5>
-        <p class="font-dm font-normal text-[15px] leading-[140%] tracking-[-0.005em] text-[#6F6F6F]">Make informed decisions to exceed your goals.</p>
+  <div class="w-full">
+    <!-- Mobile: horizontal scroll, Tab/Lap: side by side -->
+    <div class="overflow-x-auto tab:overflow-x-visible horizontal-scroll">
+      <div class="flex gap-[20px] tab:gap-[10px] lap:gap-[20px] h-[300px] items-center w-max tab:w-auto tab:justify-center">
+        <!-- card 1 -->
+        <div class="flex flex-col w-[300px] tab:w-[240px] lap:w-[386.67px] h-[300px] border-t-[1px] pt-[40px] tab:pt-[50px] lap:pt-[60px] pr-[20px] tab:pr-[25px] lap:pr-[30px] pb-[20px] gap-[40px] tab:gap-[50px] lap:gap-[60px] border-[#E9E9E9] flex-shrink-0">
+          <h1 class="font-dm font-normal text-[60px] tab:text-[70px] lap:text-[80px] leading-[100%] tracking-[-0.04em] text-[#929292]">01</h1>
+          <div class="flex flex-col w-full gap-[15px] tab:gap-[18px] lap:gap-[20px]">
+            <h5 class="font-crimson font-normal text-[16px] tab:text-[17px] lap:text-[18px] leading-[100%] tracking-[-0.03em] text-black">Get Started</h5>
+            <p class="font-dm font-normal text-[14px] tab:text-[14px] lap:text-[15px] leading-[140%] tracking-[-0.005em] text-[#6F6F6F]">With our intuitive setup, you're up and running in minutes.</p>
+          </div>
+        </div>
+        <!-- card 2 -->
+        <div class="flex flex-col w-[300px] tab:w-[240px] lap:w-[386.67px] h-[300px] border-t-[1px] pt-[40px] tab:pt-[50px] lap:pt-[60px] pr-[20px] tab:pr-[25px] lap:pr-[30px] pb-[20px] gap-[40px] tab:gap-[50px] lap:gap-[60px] border-[#E9E9E9] flex-shrink-0">
+          <h1 class="font-dm font-normal text-[60px] tab:text-[70px] lap:text-[80px] leading-[100%] tracking-[-0.04em] text-[#929292]">02</h1>
+          <div class="flex flex-col w-full gap-[15px] tab:gap-[18px] lap:gap-[20px]">
+            <h5 class="font-crimson font-normal text-[16px] tab:text-[17px] lap:text-[18px] leading-[100%] tracking-[-0.03em] text-black">Customize and Configure</h5>
+            <p class="font-dm font-normal text-[14px] tab:text-[14px] lap:text-[15px] leading-[140%] tracking-[-0.005em] text-[#6F6F6F]">Adapt Area to your specific requirements and preferences.</p>
+          </div>
+        </div>
+        <!-- card 3 -->
+        <div class="flex flex-col w-[300px] tab:w-[240px] lap:w-[386.67px] h-[300px] border-t-[1px] pt-[40px] tab:pt-[50px] lap:pt-[60px] pr-[20px] tab:pr-[25px] lap:pr-[30px] pb-[20px] gap-[40px] tab:gap-[50px] lap:gap-[60px] border-[#E9E9E9] flex-shrink-0">
+          <h1 class="font-dm font-normal text-[60px] tab:text-[70px] lap:text-[80px] leading-[100%] tracking-[-0.04em] text-[#929292]">03</h1>
+          <div class="flex flex-col w-full gap-[15px] tab:gap-[18px] lap:gap-[20px]">
+            <h5 class="font-crimson font-normal text-[16px] tab:text-[17px] lap:text-[18px] leading-[100%] tracking-[-0.03em] text-black">Grow Your Business</h5>
+            <p class="font-dm font-normal text-[14px] tab:text-[14px] lap:text-[15px] leading-[140%] tracking-[-0.005em] text-[#6F6F6F]">Make informed decisions to exceed your goals.</p>
+          </div>
       </div>
     </div>
   </div>
@@ -482,35 +494,34 @@
      <!-- end of how it work section  -->
 <!-- island section -->
 
-<div class="h-[704.29px] pb-[40px] gap-[10px]">
-  <img class="h-[664.29px] max-w-[1500px] max-h-[830.36px] rounded-[30px] gap-[10px]" src="./assets/islands.png" alt="">
+<div class="w-full px-[20px] tab:px-[40px] lap:px-0 pb-[30px] tab:pb-[35px] lap:pb-[40px] flex items-center justify-center">
+  <img class="w-full h-auto max-w-[350px] tab:max-w-[700px] lap:max-w-[1500px] rounded-[20px] tab:rounded-[25px] lap:rounded-[30px] object-cover" src="./assets/islands.png" alt="Islands">
 </div>
 
 <!-- connect with us section  -->
- <div class="flex flex-col h-[464px] max-w-[1500px] border-t-[0.5px] px-[300px] py-[120px] gap-[40px] border-[#E9E9E9] text-center">
-  <h1 class=" font-crimson w-[600px] h-[54px] font-normal text-[60px] leading-[90%] tracking-[-0.03em]">Connect with us</h1>
-  <p class="font-dm font-normal text-[15px] leading-[140%] tracking-[-0.005em] text-[#6F6F6F]">Schedule a quick call to learn how Area can turn your regional data into a powerful advantage.</p>
-       <button class=" flex items-center justify-center bg-[#485C11] w-[600px] h-[48px] rounded-[1000px] py-[14px] px-[22px] gap-[2px] group hover:bg-[#8E9C78] ">
-            <span class=" font-dm text-[14px] text-white font-bold leading-[140%] tracking-[-0.025em]
-             ">Learn More</span>
-        <img class="w-[6px] h-[6.01px]  transform transition duration-400 group-hover:-translate-y-2" src="./assets/icon.png" alt="">
+ <div class="flex flex-col min-h-[400px] tab:min-h-[450px] lap:h-[464px] w-full max-w-[1500px] border-t-[0.5px] px-[20px] tab:px-[60px] lap:px-[300px] py-[60px] tab:py-[80px] lap:py-[120px] gap-[30px] tab:gap-[35px] lap:gap-[40px] border-[#E9E9E9] text-center items-center">
+  <h1 class="font-crimson w-full max-w-[600px] font-normal text-[32px] tab:text-[48px] lap:text-[60px] leading-[90%] tracking-[-0.03em] text-black">Connect with us</h1>
+  <p class="font-dm font-normal text-[14px] tab:text-[15px] leading-[140%] tracking-[-0.005em] text-[#6F6F6F] max-w-[500px] tab:max-w-[600px] px-[10px] tab:px-0">Schedule a quick call to learn how Area can turn your regional data into a powerful advantage.</p>
+       <button class="flex items-center justify-center bg-[#485C11] w-full max-w-[300px] tab:max-w-[400px] lap:max-w-[600px] h-[48px] rounded-[1000px] py-[14px] px-[22px] gap-[2px] group hover:bg-[#8E9C78] transition-colors duration-300">
+            <span class="font-dm text-[14px] text-white font-bold leading-[140%] tracking-[-0.025em]">Learn More</span>
+        <img class="w-[6px] h-[6.01px] transform transition duration-400 group-hover:-translate-y-2" src="./assets/icon.png" alt="">
      </button>
  </div>
 
  <!-- footer section  -->
 
-<div class="flex flex-col max-w-[1500px] border-t-[1px] pt-[40px] pb-[20px] gap-[80px] border-[#E9E9E9]">
+<div class="flex flex-col w-full max-w-[1500px] border-t-[1px] pt-[40px] pb-[20px] gap-[80px] border-[#E9E9E9] px-[20px] tab:px-[40px] lap:px-0">
   <!-- link Section  -->
-  <div class="flex h-[40px]">
-    <ul class="flex  w-[251px] h-[20px] gap-[27px]">
-    <li class="w-[54px] h-[20px] font-dm font-bold text-[14px] leading-[140%] tracking-[-0.025em] text-[#000000]">Benefits</li>
-    <li class="w-[93px] h-[20px] font-dm font-bold text-[14px] leading-[140%] tracking-[-0.025em] text-[#000000]">Specifications</li>
-    <li class="w-[50px] h-[20px] font-dm font-bold text-[14px] leading-[140%] tracking-[-0.025em] text-[#000000] text-nowrap">How-to</li>
+  <div class="flex justify-start">
+    <ul class="flex flex-col tab:flex-row items-start tab:items-center gap-[16px] tab:gap-[25px] lap:gap-[27px]">
+    <li class="font-dm font-bold text-[14px] leading-[140%] tracking-[-0.025em] text-[#000000]">Benefits</li>
+    <li class="font-dm font-bold text-[14px] leading-[140%] tracking-[-0.025em] text-[#000000]">Specifications</li>
+    <li class="font-dm font-bold text-[14px] leading-[140%] tracking-[-0.025em] text-[#000000]">How-to</li>
     </ul>
   </div>
 
   <!-- logo section  -->
-   <div class="flex h-[70px] gap-[40px] items-end">
+   <div class="flex items-end gap-[20px] tab:gap-[40px]">
     <!-- logo  -->
 <div class="w-[34.925px] h-[77px] relative gap-[2.867px]">
   <div class="w-[31.75px] h-[70px] gap-[8.97px]">
@@ -522,14 +533,16 @@
   </div>
     <div class="w-[6px] h-[27.5px] bg-black absolute translate-x-[22px] -translate-y-[20px]"></div>
   </div>
-     <!-- text-section -->
-      <div class="flex w-[953.25px] h-[17px] gap-[16px] self-end">
-        <h3 class="w-[50px] h-[17px] font-roboto font-normal text-[12px] leading-[140%] tracking-[-0.01em] text-[#485C11]">© Area.</h3>
-        <h3 class="w-[29px] h-[17px] font-roboto font-normal text-[12px] leading-[140%] tracking-[-0.01em] text-[#485C11]">2025</h3>
+     <!-- text-section and All Rights Reserved section combined -->
+      <div class="flex justify-between items-end w-full">
+        <!-- Copyright info -->
+        <div class="flex gap-[16px]">
+          <h3 class="font-roboto font-normal text-[12px] leading-[140%] tracking-[-0.01em] text-[#485C11]">© Area.</h3>
+          <h3 class="font-roboto font-normal text-[12px] leading-[140%] tracking-[-0.01em] text-[#485C11]">2025</h3>
+        </div>
+        <!-- All Rights Reserved -->
+        <h2 class="font-roboto font-normal text-[12px] leading-[140%] tracking-[-0.01em] text-[#485C11]">All Rights Reserved</h2>
       </div>
-
-      <!-- All Right reserved section  -->
-       <h2 class="w-[135px] h-[17px] font-roboto font-normal text-[12px] leading-[140%] tracking-[-0.01em] text-[#485C11] self-end">All Rights Reserved</h2>
    </div>
      </div>
 </div>
