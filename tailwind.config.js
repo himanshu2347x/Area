@@ -3,9 +3,9 @@ export default {
   content: ["./docs/**/*.{html,js}"],
   theme: {
     screens: {
-      desk: '1280px',
-      tab: '800px',
       mob: '375px',
+      tab: '800px',
+      lap: '1280px',
     },
     extend: {
       fontFamily: {
