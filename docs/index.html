@@ -14,7 +14,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
 </head>
 <body >
- <div class="mx-auto max-w-[1280px] px-[40px] pb-[20px]">
+ <div class="mx-auto max-w-[1280px] mob:px-[16px] px-[40px]">
     <div class="w-full">
         <!-- Nav section  -->
 <nav class="flex relative items-center justify-between h-[80px] tab:h-[120px] desk:h-[148px] pt-5 pb-[20px] tab:pb-[40px] desk:pb-[80px]">
@@ -128,14 +128,18 @@
   </span>
 
   <!-- Responsive grid container -->
-  <div class="grid gap-[40px] justify-items-center w-full"
-       style="grid-template-columns: repeat(auto-fit, minmax(114px, 1fr));">
+  <div class="grid gap-[40px] justify-items-center w-full
+       grid-cols-2 
+       tab:grid-cols-4 tab:grid-rows-2 tab:justify-center tab:max-w-[700px] tab:mx-auto
+       lap:grid-cols-6 lap:grid-rows-1 lap:max-w-none">
+    <!-- First row: 4 icons -->
     <img class="w-[114px] h-[44px] opacity-60 mix-blend-exclusion" src="./assets/image1.png" alt="">
     <img class="w-[114px] h-[44px] opacity-60 mix-blend-exclusion" src="./assets/image2.png" alt="">
     <img class="w-[114px] h-[44px] opacity-60 mix-blend-exclusion" src="./assets/image3.png" alt="">
     <img class="w-[114px] h-[44px] opacity-60 mix-blend-exclusion" src="./assets/image4.png" alt="">
-    <img class="w-[114px] h-[44px] opacity-60 mix-blend-exclusion" src="./assets/image5.png" alt="">
-    <img class="w-[114px] h-[44px] opacity-60 mix-blend-exclusion" src="./assets/image6.png" alt="">
+    <!-- Second row: 2 icons centered -->
+    <img class="w-[114px] h-[44px] opacity-60 mix-blend-exclusion tab:col-start-2 tab:col-end-3" src="./assets/image5.png" alt="">
+    <img class="w-[114px] h-[44px] opacity-60 mix-blend-exclusion tab:col-start-3 tab:col-end-4" src="./assets/image6.png" alt="">
   </div>
 </div>
 
