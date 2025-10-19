@@ -1074,6 +1074,10 @@ video {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.flex-row {
+  flex-direction: row;
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -2154,6 +2158,14 @@ video {
     flex-direction: row;
   }
 
+  .lap\:flex-col {
+    flex-direction: column;
+  }
+
+  .lap\:items-start {
+    align-items: flex-start;
+  }
+
   .lap\:gap-0 {
     gap: 0px;
   }
@@ -2184,6 +2196,10 @@ video {
 
   .lap\:gap-\[80px\] {
     gap: 80px;
+  }
+
+  .lap\:gap-\[8px\] {
+    gap: 8px;
   }
 
   .lap\:rounded-\[30px\] {
